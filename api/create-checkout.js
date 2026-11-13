@@ -40,7 +40,7 @@ export default async function handler(req, res) {
     return res.status(400).json({ error: 'Selecciona entre 1 y 6 entradas.' });
   }
 
-  const reference = `friendzone-${randomUUID()}`;
+  const reference = `impro-lab-${randomUUID()}`;
   const unitPrice = price.toFixed(2);
   const totalAmount = (price * quantity).toFixed(2);
   const baseUrl = parsedUrl.origin;
@@ -49,10 +49,10 @@ export default async function handler(req, res) {
     type: 'online',
     processing_mode: 'manual',
     total_amount: totalAmount,
-    description: 'Entradas La Friendzone - Talk Show de Improvisación',
+    description: 'Entradas IMPRO-LAB - Talk Show de Improvisación',
     external_reference: reference,
     payer: { email: normalizedEmail },
-    items: [{ title: 'Entrada general - La Friendzone', quantity, unit_price: unitPrice }],
+    items: [{ title: 'Entrada general - IMPRO-LAB', quantity, unit_price: unitPrice }],
     config: {
       online: {
         success_url: `${baseUrl}/?checkout=return`,

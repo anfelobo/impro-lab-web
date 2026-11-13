@@ -3,7 +3,7 @@
  * La presentación del 15 de mayo de 2026 citada por Idartes es HISTÓRICA.
  */
 export const EVENT = {
-  name: 'La Friendzone',
+  name: 'IMPRO-LAB',
   subtitle: 'Talk show de improvisación',
   nextDate: 'Próxima fecha por anunciar',
   nextVenue: 'Bogotá · escenario por confirmar',
